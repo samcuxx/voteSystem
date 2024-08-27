@@ -1,0 +1,224 @@
+/* General styling for the table container */
+.table-con {
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  margin: 60px;
+  margin-top: 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+}
+
+/* Table styling */
+.table-con table {
+  width: -webkit-fill-available;
+  border-collapse: collapse;
+}
+
+.table-con th,
+.table-con td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table-con th {
+  background-color: #e9e9e9;
+  text-shadow: 0px 0px 3px rgb(0, 0, 0, 0.3);
+  color: #2c2c2c;
+  font-size: 20px;
+}
+
+.table-con tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-con tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for the edit and delete buttons */
+.edit-btn,
+.delete-btn {
+  background: none;
+  padding: 5px;
+}
+
+.edit-btn:hover {
+  color: blue;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Popup form styling */
+.popBtn {
+  margin: 40px 60px 20px 60px;
+  padding: 5px;
+  display: flex;
+  justify-content: right;
+}
+
+.popBtn button {
+  background: none;
+  font-size: 18px;
+  color: rgb(7, 0, 44);
+}
+
+.popBtn button:hover {
+  cursor: pointer;
+  color: green;
+  font-size: 19px;
+}
+
+/* Modal and modal content styling */
+.modal,
+.modalEdit,
+.modalDelete {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content,
+.modalEdit-content,
+.modalDelete-content {
+  background-color: #688cac;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 400px; /* Match the size of the login form */
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styling for modals */
+.modal-content div,
+.modalEdit-content div,
+.modalDelete-content div {
+  background-color: #e9e9e9;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 0px 0px 3px rgb(0, 0, 0, 0.3);
+  color: #2c2c2c;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Close button styling */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Popup form styling */
+#popUpForm,
+#popUpFormEdit {
+  padding: 20px;
+}
+
+#popUpForm label,
+#popUpForm option,
+#popUpFormEdit label,
+#popUpFormEdit option {
+  font-size: 20px;
+}
+
+#popUpForm input,
+#popUpForm select,
+#popUpFormEdit input,
+#popUpFormEdit select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 95%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: border 0.3s ease;
+}
+
+#popUpForm input:focus,
+#popUpFormEdit input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+/* Submit button styling */
+#submit,
+#submitEdit {
+  padding: 10px;
+  background-color: blue;
+  color: #688cac;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover,
+#submitEdit:hover {
+  background-color: green;
+}
+
+/* Delete modal button styles */
+.delete-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-confirm,
+.delete-cancel {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.delete-confirm {
+  background-color: blue;
+  color: #688cac;
+}
+
+.delete-confirm:hover {
+  background-color: green;
+}
+
+.delete-cancel {
+  background-color: gray;
+  color: #688cac;
+}
+
+.delete-cancel:hover {
+  background-color: darkgray;
+}
+
+.modalDelete-content p {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
